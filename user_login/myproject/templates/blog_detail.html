@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ blog_post.title }}</title>
+
+</head>
+<body>
+    <h2>{{ blog_post.title }}</h2>
+    <img src="{{ blog_post.image.url }}" alt="Blog Image" width="300">
+    <p>Category: {{ blog_post.category }}</p>
+    <p>{{ blog_post.summary }}</p>
+    <div>{{ blog_post.content }}</div>
+    <a href="{% url 'blog_list' %}">Back to Blog List</a>
+</body>
+</html>
